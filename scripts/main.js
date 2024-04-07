@@ -20,7 +20,7 @@
 
     /*--/ Star Typed /--*/
 
-    var typed_strings = "Web Developer,Programmer,Pianist,Hip-Hop Dancer,Salsa lover,Latina,Worshiper";
+    var typed_strings = "UX-UI Designer,Architect,Painter";
 
     var options = {
         strings: typed_strings.split(","),
