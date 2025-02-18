@@ -20,7 +20,7 @@
 
     /*--/ Star Typed /--*/
 
-    var typed_strings = "UX-UI Designer,Architect,Painter";
+    var typed_strings = "UX-UI Designer,Interaction Design,Design Systems";
 
     var options = {
         strings: typed_strings.split(","),
