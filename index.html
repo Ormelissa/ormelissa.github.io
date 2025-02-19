@@ -69,19 +69,27 @@
                     <h1 class="intro-title mb-4">I am Melissa Ortiz</h1>
                     <p class="intro-subtitle">
                         <strong class="text-slider"></strong></p>
-                        <div style="
-                            display: flex;
-                            justify-content: center;
-                            width: 100%;">
-                            <button style="
+                        <div style="display: flex; justify-content: center;">
+                            <a href="https://www.behance.net/gallery/217298791/Portfolio-UX-UI-Design" style="
                                 background-color: #963e3e;
                                 color: white;
                                 padding: 12px 30px;
                                 border: none;
                                 border-radius: 25px;
-                                width: fit-content;">
+                                width: auto;          /* Cambiado a auto */
+                                min-width: 150px;     /* Ancho mínimo */
+                                max-width: 200px;     /* Ancho máximo */
+                                text-decoration: none;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                cursor: pointer;
+                                transition: all 0.3s ease;
+                                box-shadow: 0 2px 4px rgba(0,0,0,0.1);"
+                                onmouseover="this.style.backgroundColor='#b54c4c'; this.style.transform='translateY(-2px)'; this.style.boxShadow='0 4px 8px rgba(0,0,0,0.2)'; this.style.color='white'"
+                                onmouseout="this.style.backgroundColor='#963e3e'; this.style.transform='translateY(0)'; this.style.boxShadow='0 2px 4px rgba(0,0,0,0.1)'">
                                 Portfolio
-                            </button>
+                            </a>
                         </div>
                 </div>
             </div>
@@ -156,18 +164,36 @@
 
                                     <!-- Botón de contacto -->
                                     <div>
-                                        <button style="
-                                            background-color: #963e3e;
-                                            color: white;
-                                            border: none;
-                                            padding: 0.8rem 2rem;
-                                            border-radius: 25px;
-                                            font-size: 16px;
-                                            cursor: pointer;
-                                            width: 100%;
-                                            transition: background-color 0.3s;">
-                                            Portfolio
-                                        </button>
+                                        <style>
+                                            .portfolio-button {
+                                                background-color: #963e3e;
+                                                color: white;
+                                                padding: 12px 30px;
+                                                border: none;
+                                                border-radius: 25px;
+                                                width: 100%;
+                                                text-decoration: none;
+                                                display: flex;
+                                                justify-content: center;
+                                                align-items: center;
+                                                cursor: pointer;
+                                                transition: all 0.3s ease;
+                                                box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+                                                text-align: center;
+                                                box-sizing: border-box;
+                                            }
+                                            
+                                            .portfolio-button:hover {
+                                                background-color: #b54c4c;
+                                                transform: translateY(-2px);
+                                                box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+                                                color: white;          /* Mantenemos el color blanco en hover */
+                                            }
+                                            </style>
+                                            
+                                            <a href="https://www.behance.net/gallery/217298791/Portfolio-UX-UI-Design" class="portfolio-button">
+                                                Portfolio
+                                            </a>
                                     </div>
                                 </div>
                                 
@@ -211,8 +237,8 @@
                                         </li>
                                     </ul>
                                     <p>
-                                        Do you want to know more? Check my full CV <a class="links"
-                                            href="./CV UX Melissa.pdf">here</a>
+                                        Do you want to know more? Check my full CV <a class="links" target="_blank"
+                                            href="./CV UX Melissa.pdf">here </a>
                                     </p>
 
 
